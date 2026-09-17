@@ -251,3 +251,17 @@ This project was developed by Group 4 at Ho Chi Minh City University of Technolo
 **Guiding Lecturer**
 
 - Dr. Lê Thanh Phúc
+
+## Future Improvements
+
+Potential extensions of the project include:
+
+- Improving lane detection under different lighting conditions and lane geometries.
+- Refining the steering strategy for sharper curves and more stable vehicle movement.
+- Adding ultrasonic or LiDAR sensing for obstacle detection.
+- Introducing quantitative evaluation such as tracking error and lane-following success rate.
+- Improving system configuration to support different cameras and serial ports.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](./LICENSE) file for details.
