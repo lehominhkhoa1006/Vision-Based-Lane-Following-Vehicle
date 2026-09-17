@@ -92,7 +92,7 @@ A Logitech C920e webcam captures the road in front of the vehicle. The captured 
 To reduce the processing load, the program processes every third captured frame.
 
 <p align="center">
-  <img src="images/05_camera_raw.png" alt="Raw Camera View" width="700">
+  <img src="images/05_camera_raw.png" alt="Raw Camera View" width="400">
 </p>
 
 ### 2. Image Preprocessing
@@ -110,7 +110,7 @@ A region of interest is applied to focus the edge detection on the road area in 
 The processed region is analyzed using the probabilistic Hough Line Transform to identify line segments. These detected line segments represent candidate lane markings in the camera image.
 
 <p align="center">
-  <img src="images/06_lane_detection.png" alt="Lane Detection" width="700">
+  <img src="images/06_lane_detection.png" alt="Lane Detection" width="400">
 </p>
 
 ### 5. Line Filtering
@@ -120,7 +120,7 @@ Detected line segments are evaluated based on their orientation. Lines with an a
 The remaining line orientations are accumulated into a directional value, represented by `theta`.
 
 <p align="center">
-  <img src="images/07_line_filtering.png" alt="Line Filtering" width="700">
+  <img src="images/07_line_filtering.png" alt="Line Filtering" width="400">
 </p>
 
 ### 6. Steering Decision
