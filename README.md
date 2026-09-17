@@ -56,7 +56,7 @@ flowchart LR
 ### Wiring Diagram
 
 <p align="center">
-  <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="700">
+  <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="400">
 </p>
 
 The wiring connects the Arduino UNO and L293D motor shield to the four DC motors and the vehicle power system. The webcam is connected to the computer running the Python-based vision and control program.
