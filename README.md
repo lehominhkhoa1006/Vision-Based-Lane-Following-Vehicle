@@ -189,6 +189,19 @@ The main observed outcomes were:
 
 The experiments demonstrated the integration of computer vision, serial communication, embedded motor control, and a physical vehicle platform in a single working system.
 
+## Project Demonstration
+
+A short demonstration of the completed vehicle operating on the marked test track is provided below.
+
+<p align="center">
+  <img src="media/vehicle_demo.gif" alt="Lane-Following Vehicle Demonstration" width="400"><br>
+  <em>Figure 10. Real-time demonstration of the vehicle following the marked lane on the physical test track.</em>
+</p>
+
+### Demonstration Video
+
+- [Watch the full demonstration video](./media/vehicle_demo.mp4)
+
 ## Project Gallery
 
 <p align="center">
@@ -215,6 +228,9 @@ Vision-Based-Lane-Following-Vehicle/
 │   ├── 07_line_filtering.png
 │   ├── 08_wiring_diagram.png
 │   └── 09_python_control.png
+├── media/
+│   ├── vehicle_demo.mp4
+│   └── vehicle_demo.gif
 ├── report/
 │   ├── VBLFV_Document.pdf
 │   └── VBLFV_Presentation.pdf
