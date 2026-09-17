@@ -1,4 +1,4 @@
-# Vision-Based Lane-Following Vehicle Using Python and Arduino 
+# Vision-Based-Lane-Following-Vehicle
 
 A mini **autonomous lane-keeping car** built with **Python + Arduino**, combining computer vision, control algorithms, and hardware integration.  
 
