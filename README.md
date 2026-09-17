@@ -154,5 +154,5 @@ For turning, the Arduino selectively releases a pair of motors, allowing the veh
 The Python program continuously displays the processed camera views and prints the current movement decision in the console. During operation, the output includes commands such as `Go straight`, `Go left`, and `Go right`.
 
 <p align="center">
-  <img src="images/09_python_control.png" alt="Python Control Output" width="700">
+  <img src="images/09_python_control.png" alt="Python Control Output" width="400">
 </p>
