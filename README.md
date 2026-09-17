@@ -191,3 +191,15 @@ The main observed outcomes were:
 | Vehicle movement | The vehicle followed the marked path during physical testing. |
 
 The experiments demonstrated the integration of computer vision, serial communication, embedded motor control, and a physical vehicle platform in a single working system.
+
+## Project Gallery
+
+<p align="center">
+  <img src="images/01_team_photo.png" alt="Project Team" width="400"><br>
+  <em>Figure 8. Group 4 members during the development of the vision-based lane-following vehicle.</em>
+</p>
+
+<p align="center">
+  <img src="images/03_vehicle_closeup.png" alt="Vehicle Close-up" width="400"><br>
+  <em>Figure 9. Close-up view of the completed vehicle chassis, motors, and camera assembly.</em>
+</p>
