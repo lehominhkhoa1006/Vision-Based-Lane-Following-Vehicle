@@ -1,7 +1,8 @@
 # Vision-Based Lane-Following Vehicle
 
 <p align="center">
-  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400">
+  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
+  <em>Figure 1. Completed lane-following vehicle assembled for laboratory-scale testing and physical track experiments.</em>
 </p>
 
 A small-scale lane-following vehicle that uses computer vision to detect lane markings, determine the required steering direction, and control four DC motors through an Arduino-based system.
@@ -56,7 +57,8 @@ flowchart LR
 ### Wiring Diagram
 
 <p align="center">
-  <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="400">
+  <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="400"><br>
+  <em>Figure 2. Wiring diagram showing connections among the Arduino, motor shield, motors, and power supply.</em>
 </p>
 
 The wiring connects the Arduino UNO and L293D motor shield to the four DC motors and the vehicle power system. The webcam is connected to the computer running the Python-based vision and control program.
@@ -92,7 +94,8 @@ A Logitech C920e webcam captures the road in front of the vehicle. The captured 
 To reduce the processing load, the program processes every third captured frame.
 
 <p align="center">
-  <img src="images/05_camera_raw.png" alt="Raw Camera View" width="400">
+  <img src="images/05_camera_raw.png" alt="Raw Camera View" width="400"><br>
+  <em>Figure 3. Raw camera image captured from the vehicle before image processing and lane detection.</em>
 </p>
 
 ### 2. Image Preprocessing
@@ -110,7 +113,8 @@ A region of interest is applied to focus the edge detection on the road area in 
 The processed region is analyzed using the probabilistic Hough Line Transform to identify line segments. These detected line segments represent candidate lane markings in the camera image.
 
 <p align="center">
-  <img src="images/06_lane_detection.png" alt="Lane Detection" width="400">
+  <img src="images/06_lane_detection.png" alt="Lane Detection" width="400"><br>
+  <em>Figure 4. Detected line segments extracted from the processed camera image for lane-following.</em>
 </p>
 
 ### 5. Line Filtering
@@ -120,7 +124,8 @@ Detected line segments are evaluated based on their orientation. Lines with an a
 The remaining line orientations are accumulated into a directional value, represented by `theta`.
 
 <p align="center">
-  <img src="images/07_line_filtering.png" alt="Line Filtering" width="400">
+  <img src="images/07_line_filtering.png" alt="Line Filtering" width="400"><br>
+  <em>Figure 5. Filtered line segments after removing approximately horizontal features from the detected image.</em>
 </p>
 
 ### 6. Steering Decision
@@ -154,5 +159,6 @@ For turning, the Arduino selectively releases a pair of motors, allowing the veh
 The Python program continuously displays the processed camera views and prints the current movement decision in the console. During operation, the output includes commands such as `Go straight`, `Go left`, and `Go right`.
 
 <p align="center">
-  <img src="images/09_python_control.png" alt="Python Control Output" width="400">
+  <img src="images/09_python_control.png" alt="Python Control Output" width="400"><br>
+  <em>Figure 6. Python console output showing directional decisions during real-time vehicle operation.</em>
 </p>
