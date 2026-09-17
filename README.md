@@ -41,3 +41,42 @@ flowchart LR
     I --> J[4 DC Motors]
     J --> K[Vehicle Movement]
 ```
+## Hardware
+
+| Component | Purpose |
+|---|---|
+| Arduino UNO | Receives control commands and controls the vehicle motors |
+| L293D Motor Shield | Drives the four DC motors |
+| 4 DC Motors | Provides vehicle propulsion and differential turning |
+| Logitech C920e Webcam | Captures the road and lane markings |
+| Acrylic Chassis | Provides the main vehicle structure |
+| Lego Technic Camera Frame | Supports and positions the webcam |
+| Lithium Battery Pack | Supplies power to the vehicle |
+
+### Wiring Diagram
+
+<p align="center">
+  <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="700">
+</p>
+
+The wiring connects the Arduino UNO and L293D motor shield to the four DC motors and the vehicle power system. The webcam is connected to the computer running the Python-based vision and control program.
+
+## Software
+
+### Python
+
+The Python program is responsible for camera acquisition, image processing, lane detection, steering decisions, and serial communication with the Arduino.
+
+Main libraries and functions include:
+
+- **OpenCV** for image acquisition and computer vision processing
+- **NumPy** for image and array operations
+- **Math** for line-angle calculations
+- **Serial communication** for transmitting steering commands to the Arduino
+- **Time** for timing-related operations
+
+### Arduino
+
+The Arduino program uses the **AFMotor** library to control the four DC motors through the L293D motor shield.
+
+The Arduino communicates with the Python program through serial communication at a baud rate of **115200**.
