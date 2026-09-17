@@ -1,7 +1,7 @@
 # Vision-Based Lane-Following Vehicle
 
 <p align="center">
-  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="500">
+  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400">
 </p>
 
 A small-scale lane-following vehicle that uses computer vision to detect lane markings, determine the required steering direction, and control four DC motors through an Arduino-based system.
