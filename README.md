@@ -203,3 +203,51 @@ The experiments demonstrated the integration of computer vision, serial communic
   <img src="images/03_vehicle_closeup.png" alt="Vehicle Close-up" width="400"><br>
   <em>Figure 9. Close-up view of the completed vehicle chassis, motors, and camera assembly.</em>
 </p>
+
+## Repository Structure
+
+```text
+Vision-Based-Lane-Following-Vehicle/
+├── images/
+│   ├── 01_team_photo.png
+│   ├── 02_vehicle_final.png
+│   ├── 03_vehicle_closeup.png
+│   ├── 04_test_track.png
+│   ├── 05_camera_raw.png
+│   ├── 06_lane_detection.png
+│   ├── 07_line_filtering.png
+│   ├── 08_wiring_diagram.png
+│   └── 09_python_control.png
+├── report/
+│   ├── VBLFV_Document.pdf
+│   └── VBLFV_Presentation.pdf
+├── src/
+│   ├── main.py
+│   └── arduino_code.ino
+├── LICENSE
+└── README.md
+```
+## Documentation
+
+The following documents provide the complete technical report and project presentation.
+
+- [Project Documentation](./report/VBLFV_Document.pdf)
+- [Project Presentation](./report/VBLFV_Presentation.pdf)
+
+## Team
+
+This project was developed by Group 4 at Ho Chi Minh City University of Technology and Engineering (HCMUTE) in 2024.
+
+**Team Leader**
+
+- Lê Hồ Minh Khoa
+
+**Team Members**
+
+- Nguyễn Đặng Quốc Khánh
+- Nguyễn Anh Quốc
+- Nguyễn Gia Bảo
+
+**Guiding Lecturer**
+
+- Dr. Lê Thanh Phúc
