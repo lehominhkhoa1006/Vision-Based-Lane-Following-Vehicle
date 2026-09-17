@@ -1,10 +1,4 @@
 # Vision-Based Lane-Following Vehicle
-A small-scale lane-following vehicle that uses computer vision to detect lane markings, determine the required steering direction, and control four DC motors through an Arduino-based system.
-
-<p align="center">
-  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
-  <em>Figure 1. Completed lane-following vehicle assembled for laboratory-scale testing and physical track experiments.</em>
-</p>
 
 ## Overview
 
@@ -15,6 +9,11 @@ The vision pipeline includes grayscale conversion, Gaussian blur, Canny edge det
 The resulting control commands are transmitted from Python to an Arduino UNO through serial communication. The Arduino controls four DC motors through an L293D motor shield to produce the corresponding vehicle movement.
 
 The system was built and tested on a laboratory-scale track using adhesive tape as the lane markings.
+<p align="center">
+  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
+  <em>Figure 1. Completed lane-following vehicle assembled for laboratory-scale testing and physical track experiments.</em>
+</p>
+
 
 ## Project Objectives
 
