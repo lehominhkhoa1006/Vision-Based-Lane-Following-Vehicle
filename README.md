@@ -195,7 +195,7 @@ A short demonstration of the completed vehicle operating on the marked test trac
 
 <p align="center">
   <img src="media/vehicle_demo.gif" alt="Lane-Following Vehicle Demonstration" width="400"><br>
-  <em>Figure 10. Real-time demonstration of the vehicle following the marked lane on the physical test track.</em>
+  <em>Figure 8. Real-time demonstration of the vehicle following the marked lane on the physical test track.</em>
 </p>
 
 ### Demonstration Video
@@ -206,12 +206,12 @@ A short demonstration of the completed vehicle operating on the marked test trac
 
 <p align="center">
   <img src="images/01_team_photo.png" alt="Project Team" width="400"><br>
-  <em>Figure 8. Group 4 members during the development of the vision-based lane-following vehicle.</em>
+  <em>Figure 9. Group 4 members during the development of the vision-based lane-following vehicle.</em>
 </p>
 
 <p align="center">
   <img src="images/03_vehicle_closeup.png" alt="Vehicle Close-up" width="400"><br>
-  <em>Figure 9. Close-up view of the completed vehicle chassis, motors, and camera assembly.</em>
+  <em>Figure 10. Close-up view of the completed vehicle chassis, motors, and camera assembly.</em>
 </p>
 
 ## Repository Structure
