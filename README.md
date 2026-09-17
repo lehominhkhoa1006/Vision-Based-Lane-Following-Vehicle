@@ -242,7 +242,7 @@ This project was developed by Group 4 at Ho Chi Minh City University of Technolo
 
 - Lê Hồ Minh Khoa
 
-**Team Members**
+**Other Team Members**
 
 - Nguyễn Đặng Quốc Khánh
 - Nguyễn Anh Quốc
