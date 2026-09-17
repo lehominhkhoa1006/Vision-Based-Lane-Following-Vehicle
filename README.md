@@ -80,3 +80,79 @@ Main libraries and functions include:
 The Arduino program uses the **AFMotor** library to control the four DC motors through the L293D motor shield.
 
 The Arduino communicates with the Python program through serial communication at a baud rate of **115200**.
+
+## How It Works
+
+The vehicle follows a marked lane through a vision-based control pipeline. The camera image is processed in Python to extract relevant lane lines, and the detected line orientations are used to determine the vehicle movement command.
+
+### 1. Camera Capture
+
+A Logitech C920e webcam captures the road in front of the vehicle. The captured frame is resized to 640 × 480 pixels before further processing.
+
+To reduce the processing load, the program processes every third captured frame.
+
+<p align="center">
+  <img src="images/05_camera_raw.png" alt="Raw Camera View" width="700">
+</p>
+
+### 2. Image Preprocessing
+
+Each selected frame is converted from BGR to grayscale and then smoothed using a 5 × 5 Gaussian blur. Canny edge detection is subsequently applied to identify prominent edges in the image.
+
+The current implementation uses Canny thresholds of 90 and 150.
+
+### 3. Region of Interest
+
+A region of interest is applied to focus the edge detection on the road area in front of the vehicle. This reduces the influence of image regions outside the area relevant to lane detection.
+
+### 4. Lane Line Detection
+
+The processed region is analyzed using the probabilistic Hough Line Transform to identify line segments. These detected line segments represent candidate lane markings in the camera image.
+
+<p align="center">
+  <img src="images/06_lane_detection.png" alt="Lane Detection" width="700">
+</p>
+
+### 5. Line Filtering
+
+Detected line segments are evaluated based on their orientation. Lines with an absolute angle below 45 degrees are excluded to remove approximately horizontal features that are less relevant to the lane-following task.
+
+The remaining line orientations are accumulated into a directional value, represented by `theta`.
+
+<p align="center">
+  <img src="images/07_line_filtering.png" alt="Line Filtering" width="700">
+</p>
+
+### 6. Steering Decision
+
+The accumulated line orientation is compared with a threshold value of 5 degrees:
+
+| Condition | Vehicle command |
+|---|---|
+| `theta > 5` | Turn left |
+| `theta < -5` | Turn right |
+| Otherwise | Move straight |
+
+The corresponding command is transmitted to the Arduino through serial communication. To reduce the command frequency, the program sends a control command every third steering decision.
+
+### 7. Arduino Motor Control
+
+The Arduino receives the commands through serial communication at 115200 baud and controls the four DC motors through the L293D motor shield.
+
+The Python program uses three commands:
+
+| Command | Meaning |
+|---|---|
+| `L` | Turn left |
+| `R` | Turn right |
+| `S` | Move straight |
+
+For turning, the Arduino selectively releases a pair of motors, allowing the vehicle to change direction. When a straight-motion command is received, all four motors are driven in the configured direction.
+
+### 8. Control Output
+
+The Python program continuously displays the processed camera views and prints the current movement decision in the console. During operation, the output includes commands such as `Go straight`, `Go left`, and `Go right`.
+
+<p align="center">
+  <img src="images/09_python_control.png" alt="Python Control Output" width="700">
+</p>
