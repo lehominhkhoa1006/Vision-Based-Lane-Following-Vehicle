@@ -1,7 +1,7 @@
 # Vision-Based Lane-Following Vehicle
 
 <p align="center">
-  <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
+  <img src="images/03_vehicle_closeup.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
   <em>Figure 1. Completed lane-following vehicle assembled for laboratory-scale testing and physical track experiments.</em>
 </p>
 
