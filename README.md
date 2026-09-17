@@ -1,11 +1,10 @@
 # Vision-Based Lane-Following Vehicle
+A small-scale lane-following vehicle that uses computer vision to detect lane markings, determine the required steering direction, and control four DC motors through an Arduino-based system.
 
 <p align="center">
   <img src="images/02_vehicle_final.png" alt="Vision-Based Lane-Following Vehicle" width="400"><br>
   <em>Figure 1. Completed lane-following vehicle assembled for laboratory-scale testing and physical track experiments.</em>
 </p>
-
-A small-scale lane-following vehicle that uses computer vision to detect lane markings, determine the required steering direction, and control four DC motors through an Arduino-based system.
 
 ## Overview
 
@@ -55,13 +54,12 @@ flowchart LR
 | Lithium Battery Pack | Supplies power to the vehicle |
 
 ### Wiring Diagram
+The wiring connects the Arduino UNO and L293D motor shield to the four DC motors and the vehicle power system. The webcam is connected to the computer running the Python-based vision and control program.
 
 <p align="center">
   <img src="images/08_wiring_diagram.png" alt="Vehicle Wiring Diagram" width="400"><br>
   <em>Figure 2. Wiring diagram showing connections among the Arduino, motor shield, motors, and power supply.</em>
 </p>
-
-The wiring connects the Arduino UNO and L293D motor shield to the four DC motors and the vehicle power system. The webcam is connected to the computer running the Python-based vision and control program.
 
 ## Software
 
