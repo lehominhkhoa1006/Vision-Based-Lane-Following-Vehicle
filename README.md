@@ -1,4 +1,4 @@
-# 🚗 Python-Arduino Autonomous Car Project  
+# Vision-Based Lane-Following Vehicle Using Python and Arduino 
 
 A mini **autonomous lane-keeping car** built with **Python + Arduino**, combining computer vision, control algorithms, and hardware integration.  
 
