@@ -162,3 +162,32 @@ The Python program continuously displays the processed camera views and prints t
   <img src="images/09_python_control.png" alt="Python Control Output" width="400"><br>
   <em>Figure 6. Python console output showing directional decisions during real-time vehicle operation.</em>
 </p>
+
+## Experimental Setup
+
+The completed vehicle was tested on a laboratory-scale track constructed using adhesive tape to represent the lane markings.
+
+The test setup consisted of the vehicle-mounted webcam, the Python-based vision and control program running on a computer, and the Arduino-based motor-control system. The camera was positioned to provide a forward view of the marked track while the vehicle operated along the designated path.
+
+<p align="center">
+  <img src="images/04_test_track.png" alt="Laboratory-Scale Test Track" width="400"><br>
+  <em>Figure 7. Laboratory-scale test track constructed with adhesive tape for lane-following experiments.</em>
+</p>
+
+The testing process focused on verifying the complete control pipeline, from camera-based lane detection and steering decisions to serial communication and physical vehicle movement.
+
+## Results
+
+The completed system successfully demonstrated the intended lane-following function on the marked test track.
+
+The main observed outcomes were:
+
+| Test Aspect | Observed Result |
+|---|---|
+| Lane detection | The system detected the main lane markings from camera images. |
+| Line filtering | Irrelevant line features were reduced before the steering decision. |
+| Steering decision | The system generated left, right, and straight movement commands. |
+| Python-Arduino communication | Steering commands were transmitted through serial communication. |
+| Vehicle movement | The vehicle followed the marked path during physical testing. |
+
+The experiments demonstrated the integration of computer vision, serial communication, embedded motor control, and a physical vehicle platform in a single working system.
